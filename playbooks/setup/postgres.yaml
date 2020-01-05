@@ -1,0 +1,12 @@
+---
+- hosts: postgres
+  vars:
+    postgresql_version: 11
+    postgresql_encoding: UTF-8
+    postgresql_locale: en_US.UTF-8
+    postgresql_ctype: en_US.UTF-8
+    postgresql_ext_install_contrib: yes
+  vars_files:
+    - ../../vaults/postgres.yaml
+  roles:
+    - { role: anxs.postgresql }

@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+  - name: Install OS updates
+    apt:
+      upgrade: full
+      update_cache: yes
+      autoremove: yes

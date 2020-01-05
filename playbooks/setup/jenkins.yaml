@@ -1,0 +1,10 @@
+---
+- name: Install Jenkins
+  hosts: jenkins
+  vars:
+    jenkins_hostname: jenkins.10.8.8.129.xip.io
+    jenkins_repo_url: deb http://pkg.jenkins-ci.org/debian-stable binary/
+    jenkins_repo_key_url: http://pkg.jenkins-ci.org/debian-stable/jenkins-ci.org.key
+  roles:
+    - role: geerlingguy.jenkins
+      become: yes

@@ -1,0 +1,7 @@
+---
+- name: Install NFS
+  hosts: nfs
+  vars:
+    nfs_exports: ["/data/nfs/jenkins *(rw,sync,insecure,no_subtree_check,sync)"]    
+  roles:
+    - { role: geerlingguy.nfs }

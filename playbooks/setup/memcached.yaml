@@ -1,0 +1,4 @@
+---
+- hosts: memcached
+  roles:
+    - { role: geerlingguy.memcached }

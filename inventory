@@ -1,0 +1,32 @@
+nano all:
+  hosts:
+    jenkins:
+      ansible_host: 10.8.8.129
+      ansible_user: root
+    sonarqube:
+      ansible_host: 10.8.8.235
+      ansible_user: root
+    nfs:
+      ansible_host: 10.8.8.103
+      ansible_user: root
+    postgres:
+      ansible_host: 10.8.8.54
+      ansible_user: root
+    mysql:
+      ansible_host: 10.8.8.218
+      ansible_user: root
+    memcached:
+      ansible_host: 10.8.8.59
+      ansible_user: root
+    redis:
+      ansible_host: 10.8.8.211
+      ansible_user: root
+    microk8s-1:
+      ansible_host: 10.8.8.203
+      ansible_user: root
+    microk8s-2:
+      ansible_host: 10.8.8.167
+      ansible_user: root
+    microk8s-3:
+      ansible_host: 10.8.8.119
+      ansible_user: root

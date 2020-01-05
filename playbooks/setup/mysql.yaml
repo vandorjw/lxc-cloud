@@ -1,0 +1,6 @@
+---
+- hosts: mysql
+  vars_files:
+    - ../../vaults/mysql.yaml
+  roles:
+    - { role: geerlingguy.mysql }
